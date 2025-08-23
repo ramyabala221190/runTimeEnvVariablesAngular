@@ -1,0 +1,6 @@
+services:
+   angular-nginx:
+      container_name: nginx-prod-container
+      env_file: environments/.env.production
+      ports: 
+       - 3200:81

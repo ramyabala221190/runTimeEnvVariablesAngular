@@ -1,0 +1,6 @@
+services:
+   angular-nginx:
+      container_name: nginx-dev-container
+      env_file: environments/.env.development
+      ports: 
+       - 3000:80

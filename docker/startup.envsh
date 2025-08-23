@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Starting container."
+echo "Runtime environment variables. ${NG_APP_ENV} ${NG_APP_VAR1} ${NG_APP_VAR2}" 
+envsubst < /usr/share/nginx/html/ngx-env-temp.js > /usr/share/nginx/html/ngx-env.js
+nginx -g 'daemon off;'

@@ -1,0 +1,8 @@
+services:
+   angular-nginx:
+      image: nginx-runtime-env
+      build:
+       context: ../
+       dockerfile: docker/Dockerfile
+      volumes:
+        - ../nginx/nginx.config:/etc/nginx/templates/default.conf.template
